@@ -25,4 +25,5 @@ deploy:
     secure: uxB2bhHvuM3hEdc3kIMZ/ErJlIrAh996LM44eF9W7YXbwXVs51+/A3Kdxs5aPAcgKbtE2WPQRcv5uxH1PUNnTj9b/KibXG06WNEV5YlwunxXfIJMfwJuc+0Jh2sx47rUh0FybCpXAF8xOFgMBO1+ESm4x3CyO3WiMF/GGIJO69RCxtsdeGhYvfkUtlmrqYT0ren9xzGd4leh3iIz1tk/av4TQf1H47SZWrgI8aI81tseqBBPpty+49bx+lr/X9hz2M/KvqdBDIi4edk9MEJRef2RXXBMPNboUYHZ2RMvC08FIJUk3T2HvCzd2FRkvLsPaBSzVY+kcsbscRdVwtn+POnDImekigb/zGSBgFFQQwIPgTBMOFelPFIAs7kGxFNOaqAPtrtSGOlvpnWRg2AZaELBJypnCkt+xI/Xc1eOka0D3LkuvNp21JWEYf6gEacs8+Jlyi/4ucXxgENrF3WEagBY7VFxoeBRG24yoHkyTsBeeU1AT+kIS/XrdE9ELrhV+02KYjLUwcrZfvDtp3+oDdA+y/NrTlv1jLVPCcrh+cj4Z3jFNNs5I60aduShiFF/jrzKBonTBY24fCPMWsadrFqoUBOT9KQfkHFjWmWmeggq/sPIE2hISL2t6m4BqrabYbZwPsj2GFuaYE7lznyzjwaJmJJRhFH9xaFpRE2znBk=
   file: TestCPP-$TRAVIS_OS_NAME.tgz
   on:
+    tags: true
     repo: gmaillet/testCPP
