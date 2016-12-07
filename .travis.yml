@@ -6,8 +6,8 @@ matrix:
     dist: trusty
     sudo: required
     compiler: gcc
-  - os: osx
-    compiler: clang
+#  - os: osx
+#    compiler: clang
 
 
 script:
