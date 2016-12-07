@@ -26,6 +26,6 @@ deploy:
   file: TestCPP-$TRAVIS_OS_NAME.tgz
   overwrite: true
   on:
-    tags: true
+#    tags: true
     branch: master
     repo: gmaillet/testCPP
