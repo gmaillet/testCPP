@@ -1,9 +1,5 @@
 language: cpp
 
-branches:
-  only:
-  - master
-
 matrix:
   include:
   - os: linux
@@ -27,3 +23,5 @@ deploy:
   overwrite: true
   on:
     tags: true
+    all_branches: true
+    repo: gmaillet/testCPP
