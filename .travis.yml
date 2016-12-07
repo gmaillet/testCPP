@@ -22,6 +22,8 @@ deploy:
   file: TestCPP-$TRAVIS_OS_NAME.tgz
   overwrite: true
   on:
+# Travis release bug : https://github.com/travis-ci/travis-ci/issues/2498
+# it's important to use these options
     tags: true
     all_branches: true
     repo: gmaillet/testCPP
