@@ -28,6 +28,6 @@ deploy:
     secure: iMEETa+zCu4tQb1gnZ6Nnb1bp8BJwvWk1te9gmxtMBUuB+vjaRysyNoNz73P8Y1
 #  draft: false
 #  prerelease: false
-#  provider: GitHub
+  provider: GitHub
   on:
     appveyor_repo_tag: true
