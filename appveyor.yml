@@ -1,0 +1,33 @@
+skip_non_tags: true
+
+branches:
+  only:
+  - master
+
+build_script:
+  - echo Running cmake...
+  - mkdir build
+  - cd build
+  - cmake ..
+  - cmake --build . --config Release
+  - dir
+  
+  
+after_build:
+  - 7z a TestIcCPP.zip Release\*
+  
+artifacts:
+  path: build\TestIcCPP.zip
+  name: testIcCPP_win
+  
+#deploy:
+#  release: testIcCPP-v$(appveyor_build_version)
+#  description: 'Release description'
+#  artifact: testIcCPP_win
+#  auth_token:
+#    secure: iMEETa+zCu4tQb1gnZ6Nnb1bp8BJwvWk1te9gmxtMBUuB+vjaRysyNoNz73P8Y1
+#  draft: false
+#  prerelease: false
+#  provider: GitHub
+#  on:
+#    branch: master
