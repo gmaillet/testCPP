@@ -1,8 +1,8 @@
-skip_non_tags: true
+#skip_non_tags: true
 
-branches:
-  only:
-  - master
+#branches:
+#  only:
+#  - master
 
 build_script:
   - echo Running cmake...
