@@ -1,4 +1,6 @@
-
+platform: 
+  - x64
+  
 build_script:
   - echo Running cmake...
   - mkdir build
