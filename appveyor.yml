@@ -5,7 +5,6 @@ build_script:
   - cd build
   - set QTDIR=C:\Qt\5.8\msvc2015_64
   - set PATH=%PATH%;%QTDIR%\bin
-  - qmake
   - cmake .. 
   - cmake --build . --config Release
   - dir
