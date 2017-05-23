@@ -1,5 +1,3 @@
-platform: 
-  - x64
   
 build_script:
   - echo Running cmake...
@@ -7,7 +5,7 @@ build_script:
   - cd build
   - set QTDIR=C:\Qt\5.8\msvc2015_64
   - set PATH=%PATH%;%QTDIR%\bin
-  - cmake .. 
+  - cmake .. -G "Visual Studio 14 2015 Win64"
   - cmake --build . --config Release
   - dir
   
