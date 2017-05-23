@@ -3,8 +3,10 @@ build_script:
   - echo Running cmake...
   - mkdir build
   - cd build
-  - dir C:\Qt\5.8\msvc2015_64\bin
-  - cmake .. -DQt_DIR=C:\Qt\5.8\msvc2015_64
+  - set QTDIR=C:\Qt\5.8\msvc2015_64
+  - set PATH=%PATH%;%QTDIR%\bin
+  - qmake
+  - cmake .. 
   - cmake --build . --config Release
   - dir
   
