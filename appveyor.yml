@@ -3,7 +3,8 @@ build_script:
   - echo Running cmake...
   - mkdir build
   - cd build
-  - cmake ..
+  - dir C:\Qt\5.8\msvc2015_64
+  - cmake .. -DQt5Widgets_DIR=C:\Qt\5.8\msvc2015_64
   - cmake --build . --config Release
   - dir
   
