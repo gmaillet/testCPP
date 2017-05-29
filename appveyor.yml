@@ -8,7 +8,9 @@ build_script:
   - cmake .. -G "Visual Studio 14 2015 Win64"
   - cmake --build . --config Release
   - mkdir Release\platforms
+  - mkdir Release\formats
   - copy %QTDIR%\bin\Qt5Core.dll Release
+  - copy %QTDIR%\plugins\formats\* Release\formats
   - copy %QTDIR%\plugins\platforms\qwindows.dll Release\platforms
   - dir
   
