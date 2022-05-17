@@ -39,6 +39,8 @@ jobs:
       run: ctest -C ${{env.BUILD_TYPE}}
     
     - name: Release & Assets
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       uses: Hs1r1us/Release-AIO@v1.0
       with:
         # The name of the tag
